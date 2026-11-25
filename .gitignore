@@ -1,0 +1,13 @@
+# Build output
+build/
+SnapGrab.apk
+*.apk
+!tools/bin/apk/
+local.properties
+
+# IDE / OS noise
+.idea/
+*.iml
+.DS_Store
+.gradle/
+captures/
