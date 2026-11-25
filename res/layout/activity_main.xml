@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/stroke"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:background="#050506">
+
+        <LinearLayout
+            android:id="@+id/tab_download"
+            style="@style/Tab">
+            <ImageView
+                android:id="@+id/iv_tab_download"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_download"
+                android:contentDescription="@string/tab_download"/>
+            <TextView
+                android:id="@+id/tv_tab_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_download"
+                android:textSize="10sp"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_browser"
+            style="@style/Tab">
+            <ImageView
+                android:id="@+id/iv_tab_browser"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_globe"
+                android:contentDescription="@string/tab_browser"/>
+            <TextView
+                android:id="@+id/tv_tab_browser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_browser"
+                android:textSize="10sp"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_history"
+            style="@style/Tab">
+            <ImageView
+                android:id="@+id/iv_tab_history"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_history"
+                android:contentDescription="@string/tab_history"/>
+            <TextView
+                android:id="@+id/tv_tab_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_history"
+                android:textSize="10sp"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

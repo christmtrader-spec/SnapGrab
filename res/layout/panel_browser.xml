@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_browser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:hint="@string/browser_hint"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text_dim"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:inputType="textUri"
+            android:imeOptions="actionGo"/>
+
+        <ImageButton
+            android:id="@+id/btn_go"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/btn_ghost"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/text_dim"
+            android:padding="10dp"
+            android:contentDescription="@string/browser_hint"/>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:background="#050506">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_back"
+            android:tint="@color/text_dim"
+            android:padding="12dp"
+            android:contentDescription="@string/cancel"/>
+
+        <ImageButton
+            android:id="@+id/btn_fwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/text_dim"
+            android:padding="12dp"
+            android:contentDescription="@string/open"/>
+
+        <ImageButton
+            android:id="@+id/btn_reload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_refresh"
+            android:tint="@color/text_dim"
+            android:padding="11dp"
+            android:contentDescription="@string/btn_extract"/>
+
+        <ImageButton
+            android:id="@+id/btn_save_media"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_layers"
+            android:tint="@color/accent"
+            android:padding="11dp"
+            android:contentDescription="@string/save_page_media"/>
+
+        <ImageButton
+            android:id="@+id/btn_open_ext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_open"
+            android:tint="@color/text_dim"
+            android:padding="11dp"
+            android:contentDescription="@string/open"/>
+    </LinearLayout>
+</LinearLayout>
